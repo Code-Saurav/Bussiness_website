@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+//html code inside the jsx function : 
+import ExpenseItem from  './components/ExpenseItem'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <h2>
+      Hello world
+    </h2>
+    <ExpenseItem></ExpenseItem>
+   </div>
   );
 }
 
 export default App;
+
+// Imperative approach : <p>This is also visible </p>
+// const para = document.createElement('p');
+// para.textContent = 'This is also visible';
+// document.getElementById('root').append(para)
