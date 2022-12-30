@@ -12,7 +12,7 @@ const ExpenseItem = (props) => {
 
   //function that get activated on button click 
   const clickHandler = ()=>{
-    setTitle('updated');
+    setTitle('Updated !!!');
   }
 
 
