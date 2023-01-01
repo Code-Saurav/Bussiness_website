@@ -5,6 +5,7 @@ import Card from "../UI/Card";
 import { useState } from "react";
 import ExpenseFilter from "./ExpenseFilter";
 import ExpensesList from "./ExpensesList"
+import ExpensesChart from "./ExpensesChart"
 
 const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2022");
@@ -24,6 +25,7 @@ const Expenses = (props) => {
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
+      <ExpensesChart expenses = {filteredExpenses} />
       <ExpensesList items = {filteredExpenses}/>
       {/* Map takes a function and apply that function of the every element in the array */}
     </Card>
