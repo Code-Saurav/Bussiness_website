@@ -26,6 +26,7 @@ const Expenses = (props) => {
         onChangeFilter={filterChangeHandler}
       />
       <ExpensesChart expenses = {filteredExpenses} />
+      
       <ExpensesList items = {filteredExpenses}/>
       {/* Map takes a function and apply that function of the every element in the array */}
     </Card>
